@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="VLA 大模型方向个人网站，展示视觉-语言-动作模型、具身智能、机器人策略学习与多模态大模型项目。"
+    />
+    <title>VLA 大模型个人网站</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">VLA</span>
+        <span class="brand-text">Vision Language Action</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#writing">文章</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">VLA 大模型 / 具身智能 / 机器人策略学习</p>
+          <h1>把视觉理解、语言推理和动作控制连接到真实任务中</h1>
+          <p class="hero-text">
+            我关注 Vision-Language-Action 模型、机器人操作、数据闭环和多模态评测，目标是构建能理解环境、遵循指令并稳定执行动作的智能系统。
+          </p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="#contact">联系交流</a>
+          </div>
+          <dl class="metrics" aria-label="个人方向摘要">
+            <div>
+              <dt>Focus</dt>
+              <dd>VLA / Robotics</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>PyTorch / ROS</dd>
+            </div>
+            <div>
+              <dt>Output</dt>
+              <dd>Paper / Demo</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-label="VLA 模型流程示意">
+          <div class="visual-stage">
+            <div class="signal-grid" aria-hidden="true"></div>
+            <div class="pipeline-node vision">
+              <span>Vision</span>
+              <strong>RGB-D / Video</strong>
+            </div>
+            <div class="pipeline-node language">
+              <span>Language</span>
+              <strong>Instruction</strong>
+            </div>
+            <div class="pipeline-core">
+              <span class="core-ring"></span>
+              <strong>VLA Policy</strong>
+              <small>Grounding + Planning + Control</small>
+            </div>
+            <div class="pipeline-node action">
+              <span>Action</span>
+              <strong>Robot Skill</strong>
+            </div>
+            <div class="robot-arm" aria-hidden="true">
+              <span class="joint base"></span>
+              <span class="arm upper"></span>
+              <span class="joint elbow"></span>
+              <span class="arm lower"></span>
+              <span class="gripper"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>技术背景</h2>
+        </div>
+        <div class="about-grid">
+          <article>
+            <h3>研究方向</h3>
+            <p>
+              聚焦多模态大模型在机器人和具身智能中的应用，包括视觉表征、语言条件策略、动作离散化、模仿学习、强化学习微调和长程任务规划。
+            </p>
+          </article>
+          <article>
+            <h3>工程能力</h3>
+            <p>
+              熟悉 PyTorch 训练、数据集构建、模型评测、推理部署和实验管理，可将论文方法转化为可复现实验与可展示 Demo。
+            </p>
+          </article>
+          <article>
+            <h3>系统视角</h3>
+            <p>
+              关注从数据采集、模型训练、仿真验证到真实机器人执行的完整闭环，强调可靠性、可解释评测和任务成功率。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Expertise</p>
+          <h2>能力栈</h2>
+        </div>
+        <div class="skill-board">
+          <div class="skill-column">
+            <h3>模型</h3>
+            <ul>
+              <li>Vision-Language-Action Policy</li>
+              <li>Multimodal LLM / VLM</li>
+              <li>Diffusion Policy</li>
+              <li>Behavior Cloning</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3>机器人</h3>
+            <ul>
+              <li>Robot Manipulation</li>
+              <li>ROS / MoveIt</li>
+              <li>Isaac Sim / MuJoCo</li>
+              <li>Sim2Real Evaluation</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3>工程</h3>
+            <ul>
+              <li>PyTorch / CUDA</li>
+              <li>Dataset Pipeline</li>
+              <li>Experiment Tracking</li>
+              <li>Model Serving</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>精选项目</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media policy"></div>
+            <div class="project-body">
+              <p class="project-type">VLA Policy</p>
+              <h3>面向桌面操作任务的视觉语言动作策略</h3>
+              <p>
+                构建从自然语言指令到机器人末端动作的策略模型，支持抓取、放置、排序等短程操作任务。
+              </p>
+              <div class="tag-list">
+                <span>PyTorch</span>
+                <span>Imitation Learning</span>
+                <span>RGB-D</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media data"></div>
+            <div class="project-body">
+              <p class="project-type">Data Engine</p>
+              <h3>机器人多模态数据闭环与评测系统</h3>
+              <p>
+                设计任务采集、轨迹清洗、失败样本分析和模型回放流程，用统一指标追踪策略改进。
+              </p>
+              <div class="tag-list">
+                <span>Dataset</span>
+                <span>Evaluation</span>
+                <span>Replay</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media planner"></div>
+            <div class="project-body">
+              <p class="project-type">Planning</p>
+              <h3>结合 VLM 的任务理解与子目标规划</h3>
+              <p>
+                将视觉场景理解和语言任务分解结合，输出可执行子目标序列，并接入底层技能库完成动作。
+              </p>
+              <div class="tag-list">
+                <span>VLM</span>
+                <span>Task Planning</span>
+                <span>Skill Library</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing" class="content-section writing-section">
+        <div class="section-heading">
+          <p class="eyebrow">Writing</p>
+          <h2>技术笔记</h2>
+        </div>
+        <div class="article-list">
+          <a href="#" class="article-row">
+            <span>01</span>
+            <strong>VLA 模型如何把语言指令落到机器人动作</strong>
+            <em>模型结构 / 动作空间 / 数据格式</em>
+          </a>
+          <a href="#" class="article-row">
+            <span>02</span>
+            <strong>机器人操作数据集的采集、清洗与失败样本分析</strong>
+            <em>数据闭环 / 评测指标 / 回放工具</em>
+          </a>
+          <a href="#" class="article-row">
+            <span>03</span>
+            <strong>从 VLM 场景理解到可执行任务规划</strong>
+            <em>Grounding / Planning / Skill</em>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>欢迎交流 VLA、具身智能与机器人模型落地</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:your.email@example.com">发送邮件</a>
+          <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 VLA Research Portfolio</span>
+      <span>Built as a static personal website</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

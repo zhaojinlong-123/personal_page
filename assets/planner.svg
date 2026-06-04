@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Planner diagram">
+  <rect width="900" height="520" fill="#edf4f2"/>
+  <circle cx="450" cy="260" r="168" fill="#fffaf0" stroke="#17201c" stroke-width="6"/>
+  <g fill="#fffaf0" stroke="#17201c" stroke-width="5">
+    <rect x="92" y="92" width="178" height="104" rx="18"/>
+    <rect x="630" y="92" width="178" height="104" rx="18"/>
+    <rect x="92" y="324" width="178" height="104" rx="18"/>
+    <rect x="630" y="324" width="178" height="104" rx="18"/>
+  </g>
+  <g stroke-linecap="round" stroke-width="13">
+    <path d="M132 132h98M132 164h62" stroke="#1f7a5a"/>
+    <path d="M670 132h98M670 164h62" stroke="#246b92"/>
+    <path d="M132 364h98M132 396h62" stroke="#b44a3c"/>
+    <path d="M670 364h98M670 396h62" stroke="#c58a22"/>
+  </g>
+  <path d="M270 144c72 18 105 58 146 106M630 144c-72 18-105 58-146 106M270 376c72-18 105-58 146-106M630 376c-72-18-105-58-146-106" fill="none" stroke="#17201c" stroke-width="8" stroke-dasharray="18 16" stroke-linecap="round"/>
+  <path d="M390 242h120v76H390z" fill="#17201c"/>
+  <path d="M422 280h56M450 252v56" stroke="#fffaf0" stroke-width="12" stroke-linecap="round"/>
+</svg>

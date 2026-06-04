@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Data engine diagram">
+  <rect width="900" height="520" fill="#f4efe4"/>
+  <g transform="translate(96 86)">
+    <rect width="210" height="150" rx="18" fill="#fffaf0" stroke="#17201c" stroke-width="5"/>
+    <path d="M42 52h126M42 86h88M42 120h144" stroke="#246b92" stroke-width="15" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(354 86)">
+    <rect width="210" height="150" rx="18" fill="#fffaf0" stroke="#17201c" stroke-width="5"/>
+    <circle cx="72" cy="76" r="38" fill="#1f7a5a" opacity=".8"/>
+    <circle cx="138" cy="76" r="38" fill="#c58a22" opacity=".8"/>
+  </g>
+  <g transform="translate(612 86)">
+    <rect width="210" height="150" rx="18" fill="#fffaf0" stroke="#17201c" stroke-width="5"/>
+    <path d="M48 116V68M100 116V42M152 116V86" stroke="#b44a3c" stroke-width="20" stroke-linecap="round"/>
+  </g>
+  <path d="M306 160h48M564 160h48M450 236v66" stroke="#17201c" stroke-width="8" stroke-linecap="round"/>
+  <g transform="translate(184 302)">
+    <rect width="532" height="94" rx="18" fill="#17201c"/>
+    <path d="M54 48h428" stroke="#fffaf0" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+    <circle cx="110" cy="48" r="18" fill="#1f7a5a"/>
+    <circle cx="244" cy="48" r="18" fill="#246b92"/>
+    <circle cx="382" cy="48" r="18" fill="#b44a3c"/>
+  </g>
+</svg>
