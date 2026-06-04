@@ -96,3 +96,23 @@ https://zhaojinlong-123.github.io/personal_page/
 ```powershell
 git -c http.proxy=http://127.0.0.1:10809 -c https.proxy=http://127.0.0.1:10809 push
 ```
+
+也可以把代理写入 Git 全局配置，之后在终端里直接 `git pull` / `git push`：
+
+```powershell
+git config --global http.proxy http://127.0.0.1:10809
+git config --global https.proxy http://127.0.0.1:10809
+```
+
+查看当前全局代理配置：
+
+```powershell
+git config --global --get-regexp "http.*proxy|https.*proxy"
+```
+
+如果以后不需要代理，可以取消：
+
+```powershell
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
