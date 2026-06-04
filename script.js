@@ -1,5 +1,5 @@
 const visibleElements = document.querySelectorAll(
-  ".about-grid article, .skill-column, .project-card, .article-row"
+  ".about-grid article, .skill-column, .project-card, .team-card, .prototype-main, .motion-card, .detail-card, .scenario-card, .article-row"
 );
 
 const observer = new IntersectionObserver(

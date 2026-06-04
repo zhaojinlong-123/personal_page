@@ -8,12 +8,15 @@
       content="麻袋科技公司主页，聚焦情感陪伴机器人、具身智能、大模型与 VLA。"
     />
     <title>麻袋科技 | 情感陪伴机器人与具身智能</title>
+    <link rel="icon" href="./assets/madai-logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="回到首页">
-        <span class="brand-mark">MD</span>
+        <span class="brand-mark">
+          <img src="./assets/madai-logo.svg" alt="" />
+        </span>
         <span class="brand-text">
           <strong>麻袋科技</strong>
           <small>Emotional Companion Robotics</small>
@@ -24,6 +27,7 @@
         <a href="#research">研究</a>
         <a href="#team">团队</a>
         <a href="#robots">机器人</a>
+        <a href="#prototype">原型</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
@@ -53,6 +57,14 @@
             <div>
               <dt>Product</dt>
               <dd>Companion Robot</dd>
+            </div>
+            <div>
+              <dt>Financing</dt>
+              <dd>首轮融资 10 亿 <small>目标</small></dd>
+            </div>
+            <div>
+              <dt>Launch</dt>
+              <dd>2027 年上半年 <small>预计</small></dd>
             </div>
           </dl>
         </div>
@@ -193,14 +205,14 @@
             <div class="project-media policy"></div>
             <div class="project-body">
               <p class="project-type">Emotional Intelligence</p>
-              <h3>情绪理解与陪伴决策引擎</h3>
+              <h3>第一代情感陪伴机器人</h3>
               <p>
-                结合语音、文本、表情和行为模式，识别用户状态，并生成克制、自然、可持续的陪伴策略。
+                第一代情感陪伴机器人预计 2027 年上半年和大家见面，面向家庭陪伴、主动问候、情绪支持和日常互动场景。
               </p>
               <div class="tag-list">
-                <span>Affective AI</span>
-                <span>Memory</span>
-                <span>Dialogue</span>
+                <span>2027 H1</span>
+                <span>Companion AI</span>
+                <span>Embodied Robot</span>
               </div>
             </div>
           </article>
@@ -234,6 +246,90 @@
               </div>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section id="prototype" class="content-section prototype-section">
+        <div class="section-heading">
+          <p class="eyebrow">Prototype</p>
+          <h2>第一代情感陪伴机器人原型概念</h2>
+        </div>
+        <div class="prototype-board">
+          <div class="prototype-main" aria-label="机器人整体原型图">
+            <div class="prototype-grid" aria-hidden="true"></div>
+            <svg class="robot-blueprint" viewBox="0 0 520 620" role="img" aria-labelledby="robotTitle robotDesc">
+              <title id="robotTitle">麻袋科技第一代情感陪伴机器人原型</title>
+              <desc id="robotDesc">A front-view concept blueprint showing the full robot body, sensors, companion display, arms and mobile base.</desc>
+              <defs>
+                <linearGradient id="robotGlow" x1="140" y1="60" x2="410" y2="560" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#62E6FF" />
+                  <stop offset="1" stop-color="#6EFFC0" />
+                </linearGradient>
+                <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+                  <feGaussianBlur stdDeviation="4" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <path class="blueprint-line faint" d="M260 36V586M72 310H448" />
+              <ellipse class="robot-shadow" cx="260" cy="574" rx="132" ry="24" />
+              <rect class="robot-body" x="156" y="190" width="208" height="248" rx="54" />
+              <rect class="robot-chest" x="194" y="260" width="132" height="92" rx="26" />
+              <path class="robot-screen" d="M216 292C230 277 250 274 260 291C270 274 291 277 304 292C320 312 299 337 260 354C221 337 200 312 216 292Z" />
+              <rect class="robot-head" x="170" y="64" width="180" height="130" rx="48" />
+              <path class="robot-face" d="M214 130C226 142 240 142 252 130M288 130C300 142 314 142 326 130" />
+              <circle class="robot-sensor" cx="260" cy="106" r="12" />
+              <path class="robot-neck" d="M230 194H290V220H230Z" />
+              <path class="robot-arm left" d="M154 236C106 258 88 308 104 362C113 392 136 409 162 397" />
+              <path class="robot-arm right" d="M366 236C414 258 432 308 416 362C407 392 384 409 358 397" />
+              <circle class="robot-joint" cx="128" cy="374" r="18" />
+              <circle class="robot-joint" cx="392" cy="374" r="18" />
+              <path class="robot-base" d="M172 438H348L382 534C388 553 374 570 354 570H166C146 570 132 553 138 534L172 438Z" />
+              <path class="robot-base-line" d="M176 518H344" />
+              <circle class="robot-wheel" cx="192" cy="556" r="20" />
+              <circle class="robot-wheel" cx="328" cy="556" r="20" />
+              <path class="callout-line" d="M350 108H462" />
+              <path class="callout-line" d="M326 306H466" />
+              <path class="callout-line" d="M344 510H456" />
+              <text class="callout-text" x="366" y="96">多模态感知阵列</text>
+              <text class="callout-text" x="350" y="294">情绪陪伴核心</text>
+              <text class="callout-text" x="362" y="500">静音移动底盘</text>
+            </svg>
+          </div>
+          <div class="prototype-side">
+            <article class="motion-card">
+              <span class="team-code">Dynamic</span>
+              <h3>动态交互</h3>
+              <div class="motion-strip" aria-label="动态交互状态">
+                <span class="motion-dot"></span>
+                <span class="motion-wave"></span>
+                <span class="motion-bot"></span>
+              </div>
+              <p>支持主动靠近、点头回应、屏幕表情变化、语音陪伴和轻量动作反馈，让机器人更像一个在场的伙伴。</p>
+            </article>
+            <article class="detail-card">
+              <span class="team-code">Details</span>
+              <h3>局部细节</h3>
+              <ul class="detail-list">
+                <li><strong>感知头部</strong><span>摄像头、麦克风阵列、表情屏幕</span></li>
+                <li><strong>陪伴中枢</strong><span>情绪识别、长期记忆、对话人格</span></li>
+                <li><strong>行动底座</strong><span>安全避障、低噪移动、家庭场景巡航</span></li>
+              </ul>
+            </article>
+            <article class="scenario-card">
+              <span class="team-code">Scenes</span>
+              <h3>使用场景</h3>
+              <div class="scenario-grid">
+                <span>家庭陪伴</span>
+                <span>老人关怀</span>
+                <span>儿童互动</span>
+                <span>办公助理</span>
+              </div>
+              <p>围绕“长期陪伴”设计，而不是只做一次性问答。机器人会理解用户日常节奏，并在合适时刻提供回应。</p>
+            </article>
+          </div>
         </div>
       </section>
 

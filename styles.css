@@ -78,13 +78,13 @@ a {
   width: 44px;
   height: 44px;
   place-items: center;
-  border: 1px solid rgba(98, 230, 255, 0.58);
-  border-radius: 8px;
-  background: linear-gradient(135deg, rgba(98, 230, 255, 0.2), rgba(110, 255, 192, 0.09));
-  box-shadow: 0 0 28px rgba(98, 230, 255, 0.2);
-  color: var(--cyan);
-  font-size: 13px;
-  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+.brand-mark img {
+  display: block;
+  width: 44px;
+  height: 44px;
 }
 
 .brand-text {
@@ -223,9 +223,9 @@ h3 {
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
-  max-width: 720px;
+  max-width: 880px;
   margin: 34px 0 0;
 }
 
@@ -244,6 +244,15 @@ h3 {
 .metrics dd {
   margin: 4px 0 0;
   font-weight: 900;
+}
+
+.metrics small {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--mint);
+  font-size: 11px;
+  font-weight: 900;
+  vertical-align: 0.08em;
 }
 
 .hero-visual {
@@ -615,6 +624,244 @@ h3 {
   background: rgba(6, 9, 15, 0.54);
 }
 
+.prototype-section {
+  background: rgba(98, 230, 255, 0.025);
+}
+
+.prototype-board {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.65fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.prototype-main,
+.motion-card,
+.detail-card,
+.scenario-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.16);
+}
+
+.prototype-main {
+  position: relative;
+  min-height: 640px;
+  overflow: hidden;
+}
+
+.prototype-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(141, 226, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(141, 226, 255, 0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at 50% 48%, black 0%, transparent 78%);
+}
+
+.robot-blueprint {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 760px);
+  height: 100%;
+  min-height: 640px;
+  margin: 0 auto;
+}
+
+.blueprint-line,
+.callout-line {
+  fill: none;
+  stroke: rgba(98, 230, 255, 0.28);
+  stroke-width: 2;
+}
+
+.blueprint-line.faint {
+  stroke: rgba(98, 230, 255, 0.12);
+}
+
+.robot-shadow {
+  fill: rgba(98, 230, 255, 0.12);
+}
+
+.robot-body,
+.robot-head,
+.robot-base,
+.robot-chest {
+  fill: rgba(9, 18, 29, 0.86);
+  stroke: url(#robotGlow);
+  stroke-width: 4;
+  filter: url(#softGlow);
+}
+
+.robot-neck {
+  fill: rgba(98, 230, 255, 0.14);
+  stroke: rgba(98, 230, 255, 0.48);
+  stroke-width: 2;
+}
+
+.robot-face,
+.robot-arm,
+.robot-base-line {
+  fill: none;
+  stroke: #62e6ff;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.robot-arm {
+  stroke: #6effc0;
+}
+
+.robot-screen {
+  fill: rgba(110, 255, 192, 0.18);
+  stroke: #6effc0;
+  stroke-width: 3;
+}
+
+.robot-sensor,
+.robot-joint,
+.robot-wheel {
+  fill: #070b12;
+  stroke: #62e6ff;
+  stroke-width: 4;
+}
+
+.callout-text {
+  fill: #9fb1bf;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.prototype-side {
+  display: grid;
+  gap: 18px;
+}
+
+.motion-card,
+.detail-card,
+.scenario-card {
+  padding: 24px;
+}
+
+.motion-card p,
+.scenario-card p {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.motion-strip {
+  position: relative;
+  height: 92px;
+  margin-top: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(98, 230, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(7, 11, 18, 0.54);
+}
+
+.motion-dot,
+.motion-wave,
+.motion-bot {
+  position: absolute;
+  display: block;
+}
+
+.motion-dot {
+  top: 39px;
+  left: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 18px rgba(110, 255, 192, 0.72);
+  animation: scan 2.6s ease-in-out infinite;
+}
+
+.motion-wave {
+  top: 27px;
+  left: 50%;
+  width: 38px;
+  height: 38px;
+  border: 2px solid rgba(98, 230, 255, 0.48);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: pulse 2.2s ease-out infinite;
+}
+
+.motion-bot {
+  right: 28px;
+  bottom: 18px;
+  width: 58px;
+  height: 44px;
+  border: 1px solid rgba(98, 230, 255, 0.62);
+  border-radius: 18px 18px 10px 10px;
+  background: rgba(98, 230, 255, 0.11);
+}
+
+.motion-bot::before,
+.motion-bot::after {
+  position: absolute;
+  top: 17px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan);
+  content: "";
+}
+
+.motion-bot::before {
+  left: 17px;
+}
+
+.motion-bot::after {
+  right: 17px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.detail-list li {
+  display: grid;
+  gap: 4px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(110, 255, 192, 0.45);
+}
+
+.detail-list strong {
+  color: var(--ink);
+}
+
+.detail-list span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.scenario-grid span {
+  min-height: 42px;
+  padding: 10px;
+  border: 1px solid rgba(98, 230, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(7, 11, 18, 0.38);
+  color: #bdd7e5;
+  font-size: 14px;
+  font-weight: 900;
+}
+
 .article-list {
   display: grid;
   border-top: 1px solid var(--line);
@@ -687,6 +934,27 @@ h3 {
   }
 }
 
+@keyframes scan {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: calc(100% - 116px);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.9;
+    transform: translateX(-50%) scale(0.72);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) scale(1.9);
+  }
+}
+
 @media (max-width: 980px) {
   .hero {
     grid-template-columns: 1fr;
@@ -712,6 +980,14 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .prototype-board {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
@@ -730,6 +1006,18 @@ h3 {
   }
 
   .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .prototype-main {
+    min-height: 500px;
+  }
+
+  .robot-blueprint {
+    min-height: 500px;
+  }
+
+  .scenario-grid {
     grid-template-columns: 1fr;
   }
 

@@ -38,6 +38,7 @@ personal-vla-site/
   styles.css
   script.js
   assets/
+    madai-logo.svg
     vla-policy.svg
     data-engine.svg
     planner.svg
@@ -48,6 +49,8 @@ personal-vla-site/
 - `index.html` 中的 `your.email@example.com` 替换为真实邮箱。
 - GitHub 链接可以替换为公司或个人主页。
 - 页面中的管理团队信息可以替换为真实简历、照片和职责说明。
+- `assets/madai-logo.svg` 是当前麻袋科技科技风 Logo。
+- 原型图区域包含整体机器人蓝图、动态交互、局部细节和使用场景。
 - 情感陪伴机器人、具身智能、大模型、VLA 等方向可以继续扩展为真实项目、论文或产品链接。
 
 ## 部署建议
