@@ -462,9 +462,16 @@ h3 {
   gap: 18px;
 }
 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .about-grid article,
 .skill-column,
-.project-card {
+.project-card,
+.team-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -472,14 +479,47 @@ h3 {
 }
 
 .about-grid article,
-.skill-column {
+.skill-column,
+.team-card {
   padding: 24px;
 }
 
 .about-grid p,
-.project-body p {
+.project-body p,
+.team-card p {
   margin: 12px 0 0;
   color: var(--muted);
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 230px;
+}
+
+.team-card::after {
+  position: absolute;
+  inset: auto 18px 18px auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(98, 230, 255, 0.18);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(98, 230, 255, 0.18), transparent 68%);
+  content: "";
+}
+
+.team-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  height: 28px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(110, 255, 192, 0.28);
+  border-radius: 999px;
+  color: var(--mint);
+  font-size: 12px;
+  font-weight: 900;
 }
 
 .split-section {
@@ -663,7 +703,8 @@ h3 {
 
   .about-grid,
   .project-grid,
-  .skill-board {
+  .skill-board,
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
