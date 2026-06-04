@@ -90,3 +90,9 @@ https://github.com/zhaojinlong-123/personal_page.git
 ```text
 https://zhaojinlong-123.github.io/personal_page/
 ```
+
+如果直连 GitHub 出现 `Failed to connect to github.com port 443`，可以临时使用本机代理推送：
+
+```powershell
+git -c http.proxy=http://127.0.0.1:10809 -c https.proxy=http://127.0.0.1:10809 push
+```
