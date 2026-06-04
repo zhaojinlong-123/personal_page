@@ -1,6 +1,6 @@
-# VLA 个人网站
+# 麻袋科技首席科学家主页
 
-这是一个无需构建工具的静态个人网站，主题面向 VLA 大模型、具身智能和机器人策略学习。
+这是一个无需构建工具的静态主页，主题面向麻袋科技公司首席科学家，聚焦情感陪伴机器人、具身智能、多模态大模型和 VLA。
 
 ## 打开方式
 
@@ -45,11 +45,10 @@ personal-vla-site/
 
 ## 建议替换内容
 
-- `index.html` 中的 `your.email@example.com` 替换为你的真实邮箱。
-- GitHub 链接替换为你的个人主页。
-- 项目区的 3 个项目可以替换为你的真实项目。
-- 技术笔记区可以改成真实文章链接。
-- 页脚中的名称可以改成你的姓名或昵称。
+- `index.html` 中的 `your.email@example.com` 替换为真实邮箱。
+- GitHub 链接可以替换为公司或个人主页。
+- 页面中的“麻袋科技公司首席科学家”可以替换为真实姓名和职务组合。
+- 情感陪伴机器人、具身智能、大模型、VLA 等方向可以继续扩展为真实项目、论文或产品链接。
 
 ## 部署建议
 
@@ -78,4 +77,16 @@ https://你的GitHub用户名.github.io/personal-vla-site/
 
 ```text
 https://你的GitHub用户名.github.io/
+```
+
+当前计划使用的仓库：
+
+```text
+https://github.com/zhaojinlong-123/personal_page.git
+```
+
+当前仓库名为 `personal_page`，所以 GitHub Pages 发布地址通常是：
+
+```text
+https://zhaojinlong-123.github.io/personal_page/
 ```

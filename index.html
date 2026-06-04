@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="VLA 大模型方向个人网站，展示视觉-语言-动作模型、具身智能、机器人策略学习与多模态大模型项目。"
+      content="麻袋科技公司首席科学家主页，聚焦具身智能、大模型、VLA 与情感陪伴机器人。"
     />
-    <title>VLA 大模型个人网站</title>
+    <title>麻袋科技首席科学家 | 情感陪伴机器人与具身智能</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="回到首页">
-        <span class="brand-mark">VLA</span>
-        <span class="brand-text">Vision Language Action</span>
+        <span class="brand-mark">MD</span>
+        <span class="brand-text">
+          <strong>麻袋科技</strong>
+          <small>Chief Scientist</small>
+        </span>
       </a>
       <nav class="site-nav" aria-label="主导航">
-        <a href="#about">关于</a>
-        <a href="#projects">项目</a>
-        <a href="#writing">文章</a>
+        <a href="#mission">使命</a>
+        <a href="#research">研究</a>
+        <a href="#robots">机器人</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
@@ -27,199 +30,203 @@
     <main id="top">
       <section class="hero section-band">
         <div class="hero-copy">
-          <p class="eyebrow">VLA 大模型 / 具身智能 / 机器人策略学习</p>
-          <h1>把视觉理解、语言推理和动作控制连接到真实任务中</h1>
+          <p class="eyebrow">Embodied AI / Large Models / VLA</p>
+          <h1>让机器人理解人、陪伴人，并在真实世界中可靠行动</h1>
           <p class="hero-text">
-            我关注 Vision-Language-Action 模型、机器人操作、数据闭环和多模态评测，目标是构建能理解环境、遵循指令并稳定执行动作的智能系统。
+            麻袋科技公司首席科学家主页。研究聚焦具身智能、多模态大模型、Vision-Language-Action
+            策略与情感陪伴机器人，目标是打造有感知、有记忆、有行动能力的下一代 AI 伙伴。
           </p>
           <div class="hero-actions" aria-label="主要操作">
-            <a class="button primary" href="#projects">查看项目</a>
-            <a class="button secondary" href="#contact">联系交流</a>
+            <a class="button primary" href="#robots">查看方向</a>
+            <a class="button secondary" href="#contact">合作交流</a>
           </div>
-          <dl class="metrics" aria-label="个人方向摘要">
+          <dl class="metrics" aria-label="研究摘要">
+            <div>
+              <dt>Role</dt>
+              <dd>Chief Scientist</dd>
+            </div>
             <div>
               <dt>Focus</dt>
-              <dd>VLA / Robotics</dd>
+              <dd>Embodied AI</dd>
             </div>
             <div>
-              <dt>Stack</dt>
-              <dd>PyTorch / ROS</dd>
-            </div>
-            <div>
-              <dt>Output</dt>
-              <dd>Paper / Demo</dd>
+              <dt>Product</dt>
+              <dd>Companion Robot</dd>
             </div>
           </dl>
         </div>
 
-        <div class="hero-visual" aria-label="VLA 模型流程示意">
+        <div class="hero-visual" aria-label="情感陪伴机器人智能系统示意">
           <div class="visual-stage">
             <div class="signal-grid" aria-hidden="true"></div>
-            <div class="pipeline-node vision">
-              <span>Vision</span>
-              <strong>RGB-D / Video</strong>
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="pipeline-node perception">
+              <span>Perception</span>
+              <strong>视觉 / 语音 / 触觉</strong>
             </div>
-            <div class="pipeline-node language">
-              <span>Language</span>
-              <strong>Instruction</strong>
-            </div>
-            <div class="pipeline-core">
-              <span class="core-ring"></span>
-              <strong>VLA Policy</strong>
-              <small>Grounding + Planning + Control</small>
+            <div class="pipeline-node memory">
+              <span>Memory</span>
+              <strong>长期陪伴记忆</strong>
             </div>
             <div class="pipeline-node action">
               <span>Action</span>
-              <strong>Robot Skill</strong>
+              <strong>表达 / 移动 / 交互</strong>
             </div>
-            <div class="robot-arm" aria-hidden="true">
-              <span class="joint base"></span>
-              <span class="arm upper"></span>
-              <span class="joint elbow"></span>
-              <span class="arm lower"></span>
-              <span class="gripper"></span>
+            <div class="robot-core">
+              <span class="core-ring"></span>
+              <span class="core-ring delay"></span>
+              <strong>Companion AI</strong>
+              <small>Emotion + Reasoning + VLA Policy</small>
+            </div>
+            <div class="humanoid" aria-hidden="true">
+              <span class="head"></span>
+              <span class="torso"></span>
+              <span class="arm left"></span>
+              <span class="arm right"></span>
+              <span class="base"></span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="content-section">
+      <section id="mission" class="content-section intro-section">
         <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>技术背景</h2>
+          <p class="eyebrow">Mission</p>
+          <h2>把大模型从屏幕带到可陪伴、可行动的机器人身体中</h2>
         </div>
         <div class="about-grid">
           <article>
-            <h3>研究方向</h3>
+            <h3>情感陪伴</h3>
             <p>
-              聚焦多模态大模型在机器人和具身智能中的应用，包括视觉表征、语言条件策略、动作离散化、模仿学习、强化学习微调和长程任务规划。
+              构建能感知情绪、理解语境、持续记忆用户偏好与生活节奏的陪伴系统，让交互从问答升级为长期关系。
             </p>
           </article>
           <article>
-            <h3>工程能力</h3>
+            <h3>具身智能</h3>
             <p>
-              熟悉 PyTorch 训练、数据集构建、模型评测、推理部署和实验管理，可将论文方法转化为可复现实验与可展示 Demo。
+              让机器人通过视觉、语言、动作和环境反馈建立世界模型，在家庭、办公与服务场景中完成稳定交互。
             </p>
           </article>
           <article>
-            <h3>系统视角</h3>
+            <h3>产品落地</h3>
             <p>
-              关注从数据采集、模型训练、仿真验证到真实机器人执行的完整闭环，强调可靠性、可解释评测和任务成功率。
+              以可靠性、安全性和可维护性为核心，把前沿模型能力转化为可量产、可迭代的情感陪伴机器人平台。
             </p>
           </article>
         </div>
       </section>
 
-      <section class="content-section split-section">
+      <section id="research" class="content-section split-section">
         <div class="section-heading">
-          <p class="eyebrow">Expertise</p>
-          <h2>能力栈</h2>
+          <p class="eyebrow">Research</p>
+          <h2>核心研究方向</h2>
         </div>
         <div class="skill-board">
           <div class="skill-column">
-            <h3>模型</h3>
+            <h3>多模态大模型</h3>
+            <ul>
+              <li>视觉语言理解与场景 grounding</li>
+              <li>语音、表情、姿态的情绪识别</li>
+              <li>人格一致性与长期对话记忆</li>
+              <li>端云协同推理与低延迟响应</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3>VLA 与机器人策略</h3>
             <ul>
               <li>Vision-Language-Action Policy</li>
-              <li>Multimodal LLM / VLM</li>
-              <li>Diffusion Policy</li>
-              <li>Behavior Cloning</li>
+              <li>语言指令到动作序列的对齐</li>
+              <li>模仿学习与交互数据闭环</li>
+              <li>仿真到真实场景的鲁棒迁移</li>
             </ul>
           </div>
           <div class="skill-column">
-            <h3>机器人</h3>
+            <h3>陪伴机器人系统</h3>
             <ul>
-              <li>Robot Manipulation</li>
-              <li>ROS / MoveIt</li>
-              <li>Isaac Sim / MuJoCo</li>
-              <li>Sim2Real Evaluation</li>
-            </ul>
-          </div>
-          <div class="skill-column">
-            <h3>工程</h3>
-            <ul>
-              <li>PyTorch / CUDA</li>
-              <li>Dataset Pipeline</li>
-              <li>Experiment Tracking</li>
-              <li>Model Serving</li>
+              <li>情绪状态建模与陪伴策略</li>
+              <li>多传感器感知与主动交互</li>
+              <li>安全边界、隐私保护与可解释性</li>
+              <li>硬件、软件、模型一体化架构</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="content-section">
+      <section id="robots" class="content-section">
         <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>精选项目</h2>
+          <p class="eyebrow">Companion Robot</p>
+          <h2>面向真实生活的情感陪伴机器人</h2>
         </div>
         <div class="project-grid">
           <article class="project-card">
             <div class="project-media policy"></div>
             <div class="project-body">
-              <p class="project-type">VLA Policy</p>
-              <h3>面向桌面操作任务的视觉语言动作策略</h3>
+              <p class="project-type">Emotional Intelligence</p>
+              <h3>情绪理解与陪伴决策引擎</h3>
               <p>
-                构建从自然语言指令到机器人末端动作的策略模型，支持抓取、放置、排序等短程操作任务。
+                结合语音、文本、表情和行为模式，识别用户状态，并生成克制、自然、可持续的陪伴策略。
               </p>
               <div class="tag-list">
-                <span>PyTorch</span>
-                <span>Imitation Learning</span>
-                <span>RGB-D</span>
+                <span>Affective AI</span>
+                <span>Memory</span>
+                <span>Dialogue</span>
               </div>
             </div>
           </article>
           <article class="project-card">
             <div class="project-media data"></div>
             <div class="project-body">
-              <p class="project-type">Data Engine</p>
-              <h3>机器人多模态数据闭环与评测系统</h3>
+              <p class="project-type">Embodied System</p>
+              <h3>具身交互与家庭场景感知</h3>
               <p>
-                设计任务采集、轨迹清洗、失败样本分析和模型回放流程，用统一指标追踪策略改进。
+                让机器人理解空间、人和物体关系，在家庭环境中完成主动问候、提醒、陪伴和简单动作交互。
               </p>
               <div class="tag-list">
-                <span>Dataset</span>
-                <span>Evaluation</span>
-                <span>Replay</span>
+                <span>Perception</span>
+                <span>Scene Graph</span>
+                <span>Safety</span>
               </div>
             </div>
           </article>
           <article class="project-card">
             <div class="project-media planner"></div>
             <div class="project-body">
-              <p class="project-type">Planning</p>
-              <h3>结合 VLM 的任务理解与子目标规划</h3>
+              <p class="project-type">VLA Policy</p>
+              <h3>从意图理解到可执行动作</h3>
               <p>
-                将视觉场景理解和语言任务分解结合，输出可执行子目标序列，并接入底层技能库完成动作。
+                将用户语言、场景状态和机器人能力映射为动作计划，让陪伴机器人不仅会说，也能恰当地行动。
               </p>
               <div class="tag-list">
-                <span>VLM</span>
-                <span>Task Planning</span>
-                <span>Skill Library</span>
+                <span>VLA</span>
+                <span>Planning</span>
+                <span>Control</span>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="writing" class="content-section writing-section">
+      <section class="content-section writing-section">
         <div class="section-heading">
-          <p class="eyebrow">Writing</p>
-          <h2>技术笔记</h2>
+          <p class="eyebrow">Architecture</p>
+          <h2>技术架构关键词</h2>
         </div>
         <div class="article-list">
-          <a href="#" class="article-row">
+          <a href="#contact" class="article-row">
             <span>01</span>
-            <strong>VLA 模型如何把语言指令落到机器人动作</strong>
-            <em>模型结构 / 动作空间 / 数据格式</em>
+            <strong>多模态感知层</strong>
+            <em>视觉、语音、触觉、姿态与环境状态融合</em>
           </a>
-          <a href="#" class="article-row">
+          <a href="#contact" class="article-row">
             <span>02</span>
-            <strong>机器人操作数据集的采集、清洗与失败样本分析</strong>
-            <em>数据闭环 / 评测指标 / 回放工具</em>
+            <strong>人格与长期记忆层</strong>
+            <em>偏好建模、关系连续性、隐私保护与可控遗忘</em>
           </a>
-          <a href="#" class="article-row">
+          <a href="#contact" class="article-row">
             <span>03</span>
-            <strong>从 VLM 场景理解到可执行任务规划</strong>
-            <em>Grounding / Planning / Skill</em>
+            <strong>VLA 行动策略层</strong>
+            <em>任务规划、动作生成、安全约束与真实机器人执行</em>
           </a>
         </div>
       </section>
@@ -227,18 +234,18 @@
       <section id="contact" class="contact-section">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>欢迎交流 VLA、具身智能与机器人模型落地</h2>
+          <h2>欢迎交流情感陪伴机器人、具身智能与大模型产品化</h2>
         </div>
         <div class="contact-actions">
           <a class="button primary" href="mailto:your.email@example.com">发送邮件</a>
-          <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://github.com/zhaojinlong-123/personal_page" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>© 2026 VLA Research Portfolio</span>
-      <span>Built as a static personal website</span>
+      <span>© 2026 麻袋科技 Chief Scientist</span>
+      <span>Embodied AI for emotional companion robots</span>
     </footer>
 
     <script src="./script.js"></script>
